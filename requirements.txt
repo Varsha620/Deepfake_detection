@@ -11,3 +11,6 @@ kagglehub
 scikit-learn
 seaborn
 pandas
+transformers
+torch
+torchvision

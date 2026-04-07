@@ -11,7 +11,7 @@ import tempfile
 
 # Add src to path for imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from model.model_utils import build_model, preprocess_image
+
 
 # ── Page Config ────────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -81,44 +81,47 @@ st.markdown("<p>Next-Generation AI-Powered Deepfake Detection</p>", unsafe_allow
 # ── Model Loader (cached) ──────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    import tensorflow.keras as keras
-    weights_keras = os.path.join('models', 'deepfake_detector.keras')
-    weights_h5    = os.path.join('models', 'deepfake_detector.h5')
-    
-    model = build_model()
-    loaded = False
-    
-    if os.path.exists(weights_keras):
-        try:
-            model.load_weights(weights_keras)
-            loaded = True
-        except Exception as e:
-            print(f"Failed loading keras weights: {e}")
-            
-    if not loaded and os.path.exists(weights_h5):
-        try:
-            model.load_weights(weights_h5)
-            loaded = True
-        except Exception as e:
-            print(f"Failed loading h5 weights: {e}")
+    from transformers import pipeline
+    try:
+        # Load Hugging Face pipeline for universal AI image classification
+        model = pipeline("image-classification", model="umm-maybe/AI-image-detector")
+        loaded = True
+    except Exception as e:
+        print(f"Failed loading HF model: {e}")
+        model = None
+        loaded = False
 
     return model, loaded
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 def predict_pil(model, pil_image: Image.Image) -> float:
-    """Return raw sigmoid score for a PIL image (0=fake, 1=real)."""
-    buf = io.BytesIO()
-    pil_image.save(buf, format="PNG")
-    buf.seek(0)
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-        f.write(buf.read())
-        tmp = f.name
-    score = float(model.predict(preprocess_image(tmp), verbose=0)[0][0])
-    os.remove(tmp)
-    return score
+    """Return raw score for a PIL image using Hugging Face (>=0.5 means Fake)."""
+    # The HF pipeline intrinsically handles preprocessing and RGB alignment natively.
+    results = model(pil_image, top_k=None)
+    
+    # Extract the confidence ratio for the 'Deepfake' class
+    # Default to 0.5 (uncertain) if no mapping is found
+    fake_score = 0.5
+    for res in results:
+        label = res['label'].lower()
+        if 'fake' in label or 'artificial' in label or 'ai' in label or 'synthetic' in label:
+            fake_score = res['score']
+            break
+        elif 'real' in label or 'human' in label or 'natural' in label:
+            fake_score = 1.0 - res['score']
+            break
+            
+    return float(fake_score)
 
 
 def fetch_image_from_url(url: str) -> Image.Image:
+    # Handle embedded base64 Data URIs natively (bypassing requests)
+    if url.startswith("data:image"):
+        import base64
+        header, encoded = url.split(",", 1)
+        data = base64.b64decode(encoded)
+        return Image.open(io.BytesIO(data)).convert("RGB")
+        
     # Handle Google Image Search indirect URLs (extracts the actual imgurl)
     from urllib.parse import urlparse, parse_qs
     parsed = urlparse(url)
@@ -173,8 +176,9 @@ def analyse_frames(model, frames: list) -> list:
 def render_verdict(avg_score: float, fake_ratio: float):
     """Render final verdict banner."""
     st.markdown("---")
-    is_fake = avg_score < 0.5
-    confidence = 1 - avg_score if is_fake else avg_score
+    # In CIFAKE, if REAL=0 and FAKE=1 alphabetically:
+    is_fake = avg_score >= 0.5
+    confidence = avg_score if is_fake else 1 - avg_score
     if is_fake:
         st.markdown('<div class="result-fake">⚠️ Likely AI-Generated / Deepfake</div>', unsafe_allow_html=True)
     else:
@@ -226,7 +230,7 @@ def main():
                         confidence = score if score >= 0.5 else 1 - score
 
                         st.markdown("---")
-                        if score < 0.5:
+                        if score >= 0.5:
                             st.markdown('<div class="result-fake">⚠️ Potential Deepfake Detected</div>', unsafe_allow_html=True)
                             st.write(f"Confidence score: **{confidence*100:.2f}%** (Likely AI-Generated)")
                         else:
@@ -286,7 +290,7 @@ def main():
                             st.error("Could not extract frames. Please check the video file.")
                         else:
                             scores = analyse_frames(model, frames)
-                            fake_ratio = sum(1 for s in scores if s < 0.5) / len(scores)
+                            fake_ratio = sum(1 for s in scores if s >= 0.5) / len(scores)
                             avg_score  = float(np.mean(scores))
 
                             render_verdict(avg_score, fake_ratio)
@@ -295,7 +299,7 @@ def main():
                             import pandas as pd
                             chart_data = pd.DataFrame({
                                 "Frame": range(1, len(scores) + 1),
-                                "Fake Probability": [1 - s for s in scores]
+                                "Fake Probability": [s for s in scores]
                             }).set_index("Frame")
                             st.markdown("#### 📊 Per-Frame Fake Probability")
                             st.line_chart(chart_data)
@@ -307,7 +311,7 @@ def main():
                             for i, idx in enumerate(thumb_indices):
                                 s = scores[idx]
                                 conf = (s if s >= 0.5 else 1 - s) * 100
-                                label = f"Frame {idx+1} — {'🔴 Fake' if s < 0.5 else '🟢 Real'} ({conf:.1f}%)"
+                                label = f"Frame {idx+1} — {'🔴 Fake' if s >= 0.5 else '🟢 Real'} ({conf:.1f}%)"
                                 cols[i % 3].image(frames[idx], caption=label, width="stretch")
 
                     except Exception as e:
