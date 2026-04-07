@@ -1,0 +1,4968 @@
+﻿python : 2026-04-01 
+11:08:00.014406: I tensorf
+low/core/util/port.cc:153]
+ oneDNN custom operations 
+are on. You may see 
+slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To 
+turn them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified    : 
+(2026-04-01 11:0.    
+..ONEDNN_OPTS=0`.:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr   
+ orId : NativeComman    
+dError
+ 
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\googl
+e\api_core\_python_version
+_support.py:275: 
+FutureWarning: You are 
+using a Python version 
+(3.10.11) which Google 
+will stop supporting in 
+new releases of 
+google.api_core once it 
+reaches its end of life 
+(2026-10-04). Please 
+upgrade to the latest 
+Python version, or at 
+least Python 3.11, to 
+continue receiving 
+updates for 
+google.api_core past that 
+date.
+  warnings.warn(message, 
+FutureWarning)
+2026-04-01 
+11:08:25.178435: I tensorf
+low/core/util/port.cc:153]
+ oneDNN custom operations 
+are on. You may see 
+slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To 
+turn them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+2026-04-01 11:08:37.781 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:37.782 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.433 
+WARNING streamlit: 
+  [33m[1mWarning:[0m 
+to view a Streamlit app 
+on a browser, use 
+Streamlit in a file and
+  run it with the 
+following command:
+
+    streamlit run 
+[FILE_NAME] [ARGUMENTS]
+2026-04-01 11:08:44.433 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.435 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 11:08:44.439 
+WARNING streamlit.runtime.
+scriptrunner_utils.script_
+run_context: Thread 
+'MainThread': missing 
+ScriptRunContext! This 
+warning can be ignored 
+when running in bare mode.
+2026-04-01 
+11:08:44.568923: I tensorf
+low/core/platform/cpu_feat
+ure_guard.cc:210] This 
+TensorFlow binary is 
+optimized to use 
+available CPU 
+instructions in 
+performance-critical 
+operations.
+To enable the following 
+instructions: SSE3 SSE4.1 
+SSE4.2 AVX AVX2 AVX_VNNI 
+FMA, in other operations, 
+rebuild TensorFlow with 
+the appropriate compiler 
+flags.
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+normalization/mean. 
+Weight expects shape 
+(3,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+normalization/variance. 
+Weight expects shape 
+(3,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+normalization/count. 
+Weight expects shape (). 
+Received saved weight 
+with shape (5, 5, 1152, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight stem_conv/kernel. 
+Weight expects shape (3, 
+3, 3, 32). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight stem_bn/gamma. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight stem_bn/beta. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (1, 1, 
+1152, 48)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+stem_bn/moving_mean. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (48,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+stem_bn/moving_variance. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (1, 1, 
+48, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_dwconv/kernel. 
+Weight expects shape (3, 
+3, 32, 1). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_bn/gamma. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (1, 1, 
+1152, 192)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_bn/beta. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_bn/moving_mean. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_bn/moving_v
+ariance. Weight expects 
+shape (32,). Received 
+saved weight with shape 
+(1, 1, 192, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 32, 8). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_se_reduce/bias. 
+Weight expects shape 
+(8,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 8, 32). Received saved 
+weight with shape (3, 3, 
+1152, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_se_expand/bias. 
+Weight expects shape 
+(32,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 32, 16). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_project_bn/gamma. 
+Weight expects shape 
+(16,). Received saved 
+weight with shape (1, 1, 
+1152, 48)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block1a_project_bn/beta. 
+Weight expects shape 
+(16,). Received saved 
+weight with shape (48,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_project_bn/
+moving_mean. Weight 
+expects shape (16,). 
+Received saved weight 
+with shape (1, 1, 48, 
+1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block1a_project_bn/
+moving_variance. Weight 
+expects shape (16,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 16, 96). 
+Received saved weight 
+with shape (1, 1, 1152, 
+320)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_expand_bn/gamma. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape (320,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_expand_bn/beta. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape (320,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_expand_bn/m
+oving_mean. Weight 
+expects shape (96,). 
+Received saved weight 
+with shape (1, 1, 320, 
+1280)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_expand_bn/m
+oving_variance. Weight 
+expects shape (96,). 
+Received saved weight 
+with shape (1280,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_dwconv/kernel. 
+Weight expects shape (3, 
+3, 96, 1). Received saved 
+weight with shape (1280,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_bn/gamma. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape (3,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_bn/beta. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape (3,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_bn/moving_mean. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape ()
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_bn/moving_v
+ariance. Weight expects 
+shape (96,). Received 
+saved weight with shape 
+(3, 3, 3, 32)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 96, 4). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_se_reduce/bias. 
+Weight expects shape 
+(4,). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 4, 96). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_se_expand/bias. 
+Weight expects shape 
+(96,). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 96, 24). 
+Received saved weight 
+with shape (3, 3, 32, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_project_bn/gamma. 
+Weight expects shape 
+(24,). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2a_project_bn/beta. 
+Weight expects shape 
+(24,). Received saved 
+weight with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_project_bn/
+moving_mean. Weight 
+expects shape (24,). 
+Received saved weight 
+with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2a_project_bn/
+moving_variance. Weight 
+expects shape (24,). 
+Received saved weight 
+with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 24, 144). 
+Received saved weight 
+with shape (1, 1, 32, 8)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_expand_bn/gamma. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (8,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_expand_bn/beta. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (1, 1, 
+8, 32)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_expand_bn/m
+oving_mean. Weight 
+expects shape (144,). 
+Received saved weight 
+with shape (32,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_expand_bn/m
+oving_variance. Weight 
+expects shape (144,). 
+Received saved weight 
+with shape (1, 1, 32, 16)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_dwconv/kernel. 
+Weight expects shape (3, 
+3, 144, 1). Received 
+saved weight with shape 
+(16,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_bn/gamma. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (16,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_bn/beta. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (16,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_bn/moving_mean. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (16,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_bn/moving_v
+ariance. Weight expects 
+shape (144,). Received 
+saved weight with shape 
+(1, 1, 16, 96)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 144, 6). Received 
+saved weight with shape 
+(96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_se_reduce/bias. 
+Weight expects shape 
+(6,). Received saved 
+weight with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_se_expand/kernel. 
+Weight expects shape (1, 
+1, 6, 144). Received 
+saved weight with shape 
+(96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_se_expand/bias. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_project_con
+v/kernel. Weight expects 
+shape (1, 1, 144, 24). 
+Received saved weight 
+with shape (3, 3, 96, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_project_bn/gamma. 
+Weight expects shape 
+(24,). Received saved 
+weight with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block2b_project_bn/beta. 
+Weight expects shape 
+(24,). Received saved 
+weight with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_project_bn/
+moving_mean. Weight 
+expects shape (24,). 
+Received saved weight 
+with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block2b_project_bn/
+moving_variance. Weight 
+expects shape (24,). 
+Received saved weight 
+with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 24, 144). 
+Received saved weight 
+with shape (1, 1, 96, 4)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_expand_bn/gamma. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (4,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_expand_bn/beta. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (1, 1, 
+4, 96)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_expand_bn/m
+oving_mean. Weight 
+expects shape (144,). 
+Received saved weight 
+with shape (96,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_expand_bn/m
+oving_variance. Weight 
+expects shape (144,). 
+Received saved weight 
+with shape (1, 1, 96, 24)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_dwconv/kernel. 
+Weight expects shape (5, 
+5, 144, 1). Received 
+saved weight with shape 
+(24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_bn/gamma. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_bn/beta. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_bn/moving_mean. 
+Weight expects shape 
+(144,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_bn/moving_v
+ariance. Weight expects 
+shape (144,). Received 
+saved weight with shape 
+(1, 1, 24, 144)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 144, 6). Received 
+saved weight with shape 
+(144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_se_reduce/bias. 
+Weight expects shape 
+(6,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 6, 144). Received 
+saved weight with shape 
+(144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 144, 40). 
+Received saved weight 
+with shape (3, 3, 144, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_project_bn/gamma. 
+Weight expects shape 
+(40,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3a_project_bn/beta. 
+Weight expects shape 
+(40,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_project_bn/
+moving_mean. Weight 
+expects shape (40,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3a_project_bn/
+moving_variance. Weight 
+expects shape (40,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 40, 240). 
+Received saved weight 
+with shape (1, 1, 144, 6)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_expand_bn/gamma. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (6,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_expand_bn/beta. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (1, 1, 
+6, 144)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_expand_bn/m
+oving_mean. Weight 
+expects shape (240,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_expand_bn/m
+oving_variance. Weight 
+expects shape (240,). 
+Received saved weight 
+with shape (1, 1, 144, 24)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_dwconv/kernel. 
+Weight expects shape (5, 
+5, 240, 1). Received 
+saved weight with shape 
+(24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_bn/gamma. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_bn/beta. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_bn/moving_mean. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (24,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_bn/moving_v
+ariance. Weight expects 
+shape (240,). Received 
+saved weight with shape 
+(1, 1, 24, 144)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 240, 10). Received 
+saved weight with shape 
+(144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_se_reduce/bias. 
+Weight expects shape 
+(10,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_se_expand/kernel. 
+Weight expects shape (1, 
+1, 10, 240). Received 
+saved weight with shape 
+(144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_se_expand/bias. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_project_con
+v/kernel. Weight expects 
+shape (1, 1, 240, 40). 
+Received saved weight 
+with shape (5, 5, 144, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_project_bn/gamma. 
+Weight expects shape 
+(40,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block3b_project_bn/beta. 
+Weight expects shape 
+(40,). Received saved 
+weight with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_project_bn/
+moving_mean. Weight 
+expects shape (40,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block3b_project_bn/
+moving_variance. Weight 
+expects shape (40,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 40, 240). 
+Received saved weight 
+with shape (1, 1, 144, 6)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_expand_bn/gamma. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (6,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_expand_bn/beta. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (1, 1, 
+6, 144)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_expand_bn/m
+oving_mean. Weight 
+expects shape (240,). 
+Received saved weight 
+with shape (144,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_expand_bn/m
+oving_variance. Weight 
+expects shape (240,). 
+Received saved weight 
+with shape (1, 1, 144, 40)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_dwconv/kernel. 
+Weight expects shape (3, 
+3, 240, 1). Received 
+saved weight with shape 
+(40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_bn/gamma. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_bn/beta. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_bn/moving_mean. 
+Weight expects shape 
+(240,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_bn/moving_v
+ariance. Weight expects 
+shape (240,). Received 
+saved weight with shape 
+(1, 1, 40, 240)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 240, 10). Received 
+saved weight with shape 
+(240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_se_reduce/bias. 
+Weight expects shape 
+(10,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 10, 240). Received 
+saved weight with shape 
+(240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 240, 80). 
+Received saved weight 
+with shape (5, 5, 240, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_project_bn/gamma. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4a_project_bn/beta. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_project_bn/
+moving_mean. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4a_project_bn/
+moving_variance. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 80, 480). 
+Received saved weight 
+with shape (1, 1, 240, 10)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_expand_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (10,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_expand_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (1, 1, 
+10, 240)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_expand_bn/m
+oving_mean. Weight 
+expects shape (480,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_expand_bn/m
+oving_variance. Weight 
+expects shape (480,). 
+Received saved weight 
+with shape (1, 1, 240, 40)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_dwconv/kernel. 
+Weight expects shape (3, 
+3, 480, 1). Received 
+saved weight with shape 
+(40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_bn/moving_mean. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (40,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_bn/moving_v
+ariance. Weight expects 
+shape (480,). Received 
+saved weight with shape 
+(1, 1, 40, 240)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 480, 20). Received 
+saved weight with shape 
+(240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_se_reduce/bias. 
+Weight expects shape 
+(20,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_se_expand/kernel. 
+Weight expects shape (1, 
+1, 20, 480). Received 
+saved weight with shape 
+(240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_se_expand/bias. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_project_con
+v/kernel. Weight expects 
+shape (1, 1, 480, 80). 
+Received saved weight 
+with shape (3, 3, 240, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_project_bn/gamma. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4b_project_bn/beta. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_project_bn/
+moving_mean. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4b_project_bn/
+moving_variance. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 80, 480). 
+Received saved weight 
+with shape (1, 1, 240, 10)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_expand_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (10,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_expand_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (1, 1, 
+10, 240)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_expand_bn/m
+oving_mean. Weight 
+expects shape (480,). 
+Received saved weight 
+with shape (240,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_expand_bn/m
+oving_variance. Weight 
+expects shape (480,). 
+Received saved weight 
+with shape (1, 1, 240, 80)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_dwconv/kernel. 
+Weight expects shape (3, 
+3, 480, 1). Received 
+saved weight with shape 
+(80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_bn/moving_mean. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_bn/moving_v
+ariance. Weight expects 
+shape (480,). Received 
+saved weight with shape 
+(1, 1, 80, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 480, 20). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_se_reduce/bias. 
+Weight expects shape 
+(20,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_se_expand/kernel. 
+Weight expects shape (1, 
+1, 20, 480). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_project_con
+v/kernel. Weight expects 
+shape (1, 1, 480, 80). 
+Received saved weight 
+with shape (3, 3, 480, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_project_bn/gamma. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block4c_project_bn/beta. 
+Weight expects shape 
+(80,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_project_bn/
+moving_mean. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block4c_project_bn/
+moving_variance. Weight 
+expects shape (80,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 80, 480). 
+Received saved weight 
+with shape (1, 1, 480, 20)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_expand_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (20,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_expand_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (1, 1, 
+20, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_expand_bn/m
+oving_variance. Weight 
+expects shape (480,). 
+Received saved weight 
+with shape (1, 1, 480, 80)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_dwconv/kernel. 
+Weight expects shape (5, 
+5, 480, 1). Received 
+saved weight with shape 
+(80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_bn/gamma. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_bn/beta. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_bn/moving_mean. 
+Weight expects shape 
+(480,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_bn/moving_v
+ariance. Weight expects 
+shape (480,). Received 
+saved weight with shape 
+(1, 1, 80, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 480, 20). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_se_reduce/bias. 
+Weight expects shape 
+(20,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 20, 480). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 480, 112). 
+Received saved weight 
+with shape (3, 3, 480, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_project_bn/gamma. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5a_project_bn/beta. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_project_bn/
+moving_mean. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5a_project_bn/
+moving_variance. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 112, 672). 
+Received saved weight 
+with shape (1, 1, 480, 20)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_expand_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (20,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_expand_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (1, 1, 
+20, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_expand_bn/m
+oving_mean. Weight 
+expects shape (672,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_expand_bn/m
+oving_variance. Weight 
+expects shape (672,). 
+Received saved weight 
+with shape (1, 1, 480, 80)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_dwconv/kernel. 
+Weight expects shape (5, 
+5, 672, 1). Received 
+saved weight with shape 
+(80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_bn/moving_mean. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (80,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_bn/moving_v
+ariance. Weight expects 
+shape (672,). Received 
+saved weight with shape 
+(1, 1, 80, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 672, 28). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_se_reduce/bias. 
+Weight expects shape 
+(28,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_se_expand/kernel. 
+Weight expects shape (1, 
+1, 28, 672). Received 
+saved weight with shape 
+(480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_se_expand/bias. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_project_con
+v/kernel. Weight expects 
+shape (1, 1, 672, 112). 
+Received saved weight 
+with shape (5, 5, 480, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_project_bn/gamma. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5b_project_bn/beta. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_project_bn/
+moving_mean. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5b_project_bn/
+moving_variance. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 112, 672). 
+Received saved weight 
+with shape (1, 1, 480, 20)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_expand_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (20,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_expand_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (1, 1, 
+20, 480)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_expand_bn/m
+oving_mean. Weight 
+expects shape (672,). 
+Received saved weight 
+with shape (480,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_expand_bn/m
+oving_variance. Weight 
+expects shape (672,). 
+Received saved weight 
+with shape (1, 1, 480, 
+112)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_dwconv/kernel. 
+Weight expects shape (5, 
+5, 672, 1). Received 
+saved weight with shape 
+(112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_bn/moving_mean. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_bn/moving_v
+ariance. Weight expects 
+shape (672,). Received 
+saved weight with shape 
+(1, 1, 112, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 672, 28). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_se_reduce/bias. 
+Weight expects shape 
+(28,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_se_expand/kernel. 
+Weight expects shape (1, 
+1, 28, 672). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_project_con
+v/kernel. Weight expects 
+shape (1, 1, 672, 112). 
+Received saved weight 
+with shape (5, 5, 672, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_project_bn/gamma. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block5c_project_bn/beta. 
+Weight expects shape 
+(112,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_project_bn/
+moving_mean. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block5c_project_bn/
+moving_variance. Weight 
+expects shape (112,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 112, 672). 
+Received saved weight 
+with shape (1, 1, 672, 28)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_expand_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (28,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_expand_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (1, 1, 
+28, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_expand_bn/m
+oving_variance. Weight 
+expects shape (672,). 
+Received saved weight 
+with shape (1, 1, 672, 
+112)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_dwconv/kernel. 
+Weight expects shape (5, 
+5, 672, 1). Received 
+saved weight with shape 
+(112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_bn/gamma. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_bn/beta. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_bn/moving_mean. 
+Weight expects shape 
+(672,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_bn/moving_v
+ariance. Weight expects 
+shape (672,). Received 
+saved weight with shape 
+(1, 1, 112, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 672, 28). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_se_reduce/bias. 
+Weight expects shape 
+(28,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 28, 672). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 672, 192). 
+Received saved weight 
+with shape (5, 5, 672, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_project_bn/gamma. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6a_project_bn/beta. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_project_bn/
+moving_mean. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6a_project_bn/
+moving_variance. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 192, 1152). 
+Received saved weight 
+with shape (1, 1, 672, 28)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_expand_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (28,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_expand_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (1, 1, 
+28, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_expand_bn/m
+oving_mean. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_expand_bn/m
+oving_variance. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (1, 1, 672, 
+112)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_dwconv/kernel. 
+Weight expects shape (5, 
+5, 1152, 1). Received 
+saved weight with shape 
+(112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_bn/moving_mean. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (112,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_bn/moving_v
+ariance. Weight expects 
+shape (1152,). Received 
+saved weight with shape 
+(1, 1, 112, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 1152, 48). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_se_reduce/bias. 
+Weight expects shape 
+(48,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_se_expand/kernel. 
+Weight expects shape (1, 
+1, 48, 1152). Received 
+saved weight with shape 
+(672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_se_expand/bias. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_project_con
+v/kernel. Weight expects 
+shape (1, 1, 1152, 192). 
+Received saved weight 
+with shape (5, 5, 672, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_project_bn/gamma. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6b_project_bn/beta. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_project_bn/
+moving_mean. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6b_project_bn/
+moving_variance. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 192, 1152). 
+Received saved weight 
+with shape (1, 1, 672, 28)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_expand_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (28,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_expand_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (1, 1, 
+28, 672)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_expand_bn/m
+oving_mean. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (672,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_expand_bn/m
+oving_variance. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (1, 1, 672, 
+192)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_dwconv/kernel. 
+Weight expects shape (5, 
+5, 1152, 1). Received 
+saved weight with shape 
+(192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_bn/moving_mean. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_bn/moving_v
+ariance. Weight expects 
+shape (1152,). Received 
+saved weight with shape 
+(1, 1, 192, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 1152, 48). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_se_reduce/bias. 
+Weight expects shape 
+(48,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_se_expand/kernel. 
+Weight expects shape (1, 
+1, 48, 1152). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_project_con
+v/kernel. Weight expects 
+shape (1, 1, 1152, 192). 
+Received saved weight 
+with shape (5, 5, 1152, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_project_bn/gamma. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6c_project_bn/beta. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_project_bn/
+moving_mean. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6c_project_bn/
+moving_variance. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 192, 1152). 
+Received saved weight 
+with shape (1, 1, 1152, 
+48)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_expand_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (48,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_expand_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (1, 1, 
+48, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_expand_bn/m
+oving_variance. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (1, 1, 1152, 
+192)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_dwconv/kernel. 
+Weight expects shape (5, 
+5, 1152, 1). Received 
+saved weight with shape 
+(192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_bn/moving_mean. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_bn/moving_v
+ariance. Weight expects 
+shape (1152,). Received 
+saved weight with shape 
+(1, 1, 192, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 1152, 48). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_se_reduce/bias. 
+Weight expects shape 
+(48,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_se_expand/kernel. 
+Weight expects shape (1, 
+1, 48, 1152). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_project_con
+v/kernel. Weight expects 
+shape (1, 1, 1152, 192). 
+Received saved weight 
+with shape (5, 5, 1152, 1)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_project_bn/gamma. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block6d_project_bn/beta. 
+Weight expects shape 
+(192,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_project_bn/
+moving_mean. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block6d_project_bn/
+moving_variance. Weight 
+expects shape (192,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_expand_conv
+/kernel. Weight expects 
+shape (1, 1, 192, 1152). 
+Received saved weight 
+with shape (1, 1, 1152, 
+48)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_expand_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (48,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_expand_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (1, 1, 
+48, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_expand_bn/m
+oving_variance. Weight 
+expects shape (1152,). 
+Received saved weight 
+with shape (1, 1, 1152, 
+192)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_dwconv/kernel. 
+Weight expects shape (3, 
+3, 1152, 1). Received 
+saved weight with shape 
+(192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_bn/gamma. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_bn/beta. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_bn/moving_mean. 
+Weight expects shape 
+(1152,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_bn/moving_v
+ariance. Weight expects 
+shape (1152,). Received 
+saved weight with shape 
+(1, 1, 192, 1152)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_se_reduce/kernel. 
+Weight expects shape (1, 
+1, 1152, 48). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_se_reduce/bias. 
+Weight expects shape 
+(48,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_se_expand/kernel. 
+Weight expects shape (1, 
+1, 48, 1152). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_project_con
+v/kernel. Weight expects 
+shape (1, 1, 1152, 320). 
+Received saved weight 
+with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_project_bn/gamma. 
+Weight expects shape 
+(320,). Received saved 
+weight with shape (192,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight 
+block7a_project_bn/beta. 
+Weight expects shape 
+(320,). Received saved 
+weight with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_project_bn/
+moving_mean. Weight 
+expects shape (320,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight block7a_project_bn/
+moving_variance. Weight 
+expects shape (320,). 
+Received saved weight 
+with shape (1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight top_conv/kernel. 
+Weight expects shape (1, 
+1, 320, 1280). Received 
+saved weight with shape 
+(1152,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight top_bn/gamma. 
+Weight expects shape 
+(1280,). Received saved 
+weight with shape (320,)
+  _set_weights(
+C:\Users\stuvs\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\keras
+\src\legacy\saving\legacy_
+h5_format.py:525: 
+UserWarning: Skipping 
+loading weights for layer 
+#0 (named 
+efficientnetb0)due to 
+mismatch in shape for 
+weight top_bn/beta. 
+Weight expects shape 
+(1280,). Received saved 
+weight with shape (320,)
+  _set_weights(
+Loaded: True
+Score red: 0.9994979500770569
+Score black: 0.9996522068977356
+Score random: 0.9998459219932556
