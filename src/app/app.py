@@ -1,328 +1,405 @@
-import streamlit as st
-import tensorflow as tf
-import numpy as np
-from PIL import Image
-import os
-import sys
 import io
-import cv2
-import requests
+import os
 import tempfile
+from urllib.parse import parse_qs, urlparse
 
-# Add src to path for imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import cv2
+import numpy as np
+import pandas as pd
+import requests
+import streamlit as st
+from PIL import Image
 
 
-# ── Page Config ────────────────────────────────────────────────────────────────
+MODEL_ID = os.getenv("MODEL_ID", "umm-maybe/AI-image-detector")
+FAKE_THRESHOLD = float(os.getenv("FAKE_THRESHOLD", "0.5"))
+MAX_IMAGE_BYTES = 10 * 1024 * 1024
+MAX_VIDEO_SECONDS = 60
+
+
 st.set_page_config(
-    page_title="DeepGuard | Deepfake Detection",
-    page_icon="🛡️",
-    layout="centered"
+    page_title="DeepGuard | AI Media Authenticity Demo",
+    layout="centered",
 )
 
-# ── CSS ────────────────────────────────────────────────────────────────────────
-st.markdown("""
+
+st.markdown(
+    """
     <style>
     .main {
-        background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+        background: linear-gradient(135deg, #171923 0%, #0f172a 100%);
     }
     .stApp {
-        color: #ffffff;
+        color: #f8fafc;
     }
-    .glass-card {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 2rem;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        margin-bottom: 2rem;
+    .scan-panel {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 8px;
+        padding: 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+        margin-bottom: 1.5rem;
+    }
+    .result-real,
+    .result-fake,
+    .result-unknown {
+        font-weight: 700;
+        font-size: 1.15rem;
+        text-align: center;
+        padding: 0.75rem;
+        border-radius: 8px;
+        margin-bottom: 0.75rem;
     }
     .result-real {
-        color: #00ff88;
-        font-weight: bold;
-        font-size: 24px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-        background: rgba(0, 255, 136, 0.1);
+        color: #34d399;
+        background: rgba(52, 211, 153, 0.12);
+        border: 1px solid rgba(52, 211, 153, 0.25);
     }
     .result-fake {
-        color: #ff4b2b;
-        font-weight: bold;
-        font-size: 24px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-        background: rgba(255, 75, 43, 0.1);
+        color: #fb7185;
+        background: rgba(251, 113, 133, 0.12);
+        border: 1px solid rgba(251, 113, 133, 0.25);
+    }
+    .result-unknown {
+        color: #fbbf24;
+        background: rgba(251, 191, 36, 0.12);
+        border: 1px solid rgba(251, 191, 36, 0.25);
     }
     h1 {
         text-align: center;
-        background: linear-gradient(to right, #00c6ff, #0072ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-weight: 800 !important;
     }
-    p {
+    .subtitle,
+    .disclaimer {
         text-align: center;
-        color: #cccccc;
+        color: #cbd5e1;
+    }
+    .disclaimer {
+        font-size: 0.85rem;
+        line-height: 1.45;
     }
     .stTabs [data-baseweb="tab"] {
         font-size: 16px;
         font-weight: 600;
     }
     </style>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True,
+)
 
-# ── Header ─────────────────────────────────────────────────────────────────────
-st.markdown("<h1>DeepGuard</h1>", unsafe_allow_html=True)
-st.markdown("<p>Next-Generation AI-Powered Deepfake Detection</p>", unsafe_allow_html=True)
 
-# ── Model Loader (cached) ──────────────────────────────────────────────────────
-@st.cache_resource
+@st.cache_resource(show_spinner=False)
 def load_model():
-    from transformers import pipeline
+    """Load the Hugging Face image-classification pipeline once per session."""
     try:
-        # Load Hugging Face pipeline for universal AI image classification
-        model = pipeline("image-classification", model="umm-maybe/AI-image-detector")
-        loaded = True
-    except Exception as e:
-        print(f"Failed loading HF model: {e}")
-        model = None
-        loaded = False
+        from transformers import pipeline
 
-    return model, loaded
+        return pipeline("image-classification", model=MODEL_ID), None
+    except Exception as exc:
+        return None, str(exc)
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+
+def class_to_fake_score(label: str, score: float) -> float | None:
+    """Map common model labels to a probability-like fake score."""
+    normalized = label.lower()
+    fake_tokens = ("fake", "deepfake", "synthetic", "generated", "ai", "artificial")
+    real_tokens = ("real", "human", "natural", "authentic", "photograph")
+
+    if any(token in normalized for token in fake_tokens):
+        return float(score)
+    if any(token in normalized for token in real_tokens):
+        return float(1.0 - score)
+    return None
+
+
 def predict_pil(model, pil_image: Image.Image) -> float:
-    """Return raw score for a PIL image using Hugging Face (>=0.5 means Fake)."""
-    # The HF pipeline intrinsically handles preprocessing and RGB alignment natively.
-    results = model(pil_image, top_k=None)
-    
-    # Extract the confidence ratio for the 'Deepfake' class
-    # Default to 0.5 (uncertain) if no mapping is found
-    fake_score = 0.5
-    for res in results:
-        label = res['label'].lower()
-        if 'fake' in label or 'artificial' in label or 'ai' in label or 'synthetic' in label:
-            fake_score = res['score']
-            break
-        elif 'real' in label or 'human' in label or 'natural' in label:
-            fake_score = 1.0 - res['score']
-            break
-            
-    return float(fake_score)
+    """Return a fake-probability score for a PIL image."""
+    if model is None:
+        raise RuntimeError("The model is not available. Check deployment logs for the load error.")
+
+    results = model(pil_image.convert("RGB"), top_k=None)
+    if not isinstance(results, list):
+        raise ValueError("The model returned an unexpected response.")
+
+    for result in results:
+        label = str(result.get("label", ""))
+        score = float(result.get("score", 0.0))
+        fake_score = class_to_fake_score(label, score)
+        if fake_score is not None:
+            return max(0.0, min(1.0, fake_score))
+
+    raise ValueError("The model response did not include a recognizable real/fake label.")
 
 
 def fetch_image_from_url(url: str) -> Image.Image:
-    # Handle embedded base64 Data URIs natively (bypassing requests)
-    if url.startswith("data:image"):
+    """Fetch and decode a direct image URL with basic safety checks."""
+    clean_url = url.strip()
+    if not clean_url:
+        raise ValueError("Please enter an image URL.")
+
+    if clean_url.startswith("data:image"):
         import base64
-        header, encoded = url.split(",", 1)
+
+        _, encoded = clean_url.split(",", 1)
         data = base64.b64decode(encoded)
+        if len(data) > MAX_IMAGE_BYTES:
+            raise ValueError("Image is too large. Please use an image under 10 MB.")
         return Image.open(io.BytesIO(data)).convert("RGB")
-        
-    # Handle Google Image Search indirect URLs (extracts the actual imgurl)
-    from urllib.parse import urlparse, parse_qs
-    parsed = urlparse(url)
-    if "google.com/imgres" in url:
-        qs = parse_qs(parsed.query)
-        if "imgurl" in qs:
-            url = qs["imgurl"][0]
+
+    parsed = urlparse(clean_url)
+    if parsed.scheme not in {"http", "https"}:
+        raise ValueError("Only http and https image URLs are supported.")
+
+    if "google.com/imgres" in clean_url:
+        query = parse_qs(parsed.query)
+        if "imgurl" in query:
+            clean_url = query["imgurl"][0]
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 DeepGuard/1.0 (+https://streamlit.io)"
     }
-    resp = requests.get(url, headers=headers, timeout=15)
-    resp.raise_for_status()
-    
-    # Fail gracefully if it's a webpage instead of an image
-    content_type = resp.headers.get("Content-Type", "")
-    if "text/html" in content_type:
-        raise ValueError("URL points to a webpage, not a direct image file. Please provide a direct link to the image (e.g., ending in .jpg or .png).")
+    response = requests.get(clean_url, headers=headers, timeout=15, stream=True)
+    response.raise_for_status()
 
-    return Image.open(io.BytesIO(resp.content)).convert("RGB")
+    content_type = response.headers.get("Content-Type", "").lower()
+    if content_type and "image" not in content_type:
+        raise ValueError("URL does not point to a direct image file.")
+
+    content = response.content
+    if len(content) > MAX_IMAGE_BYTES:
+        raise ValueError("Image is too large. Please use an image under 10 MB.")
+
+    return Image.open(io.BytesIO(content)).convert("RGB")
 
 
-
-
-def extract_frames(video_path: str, n_frames: int = 30) -> list:
-    """Extract n evenly-spaced frames from a video; return list of RGB ndarrays."""
+def extract_frames(video_path: str, n_frames: int = 30) -> list[np.ndarray]:
+    """Extract evenly spaced RGB frames from a video file."""
     cap = cv2.VideoCapture(video_path)
     total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     if total <= 0:
         cap.release()
         return []
+
     indices = np.linspace(0, total - 1, min(n_frames, total), dtype=int)
     frames = []
-    for idx in indices:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, int(idx))
-        ret, frame = cap.read()
-        if ret:
+    for index in indices:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(index))
+        ok, frame = cap.read()
+        if ok:
             frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+
     cap.release()
     return frames
 
 
-def analyse_frames(model, frames: list) -> list:
-    """Run model on each frame; return list of sigmoid scores."""
-    scores = []
-    for frame in frames:
-        pil = Image.fromarray(frame)
-        scores.append(predict_pil(model, pil))
-    return scores
+def get_video_duration(video_path: str) -> float:
+    cap = cv2.VideoCapture(video_path)
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+    cap.release()
+    return float(frame_count / fps) if fps and fps > 0 else 0.0
 
 
-def render_verdict(avg_score: float, fake_ratio: float):
-    """Render final verdict banner."""
-    st.markdown("---")
-    # In CIFAKE, if REAL=0 and FAKE=1 alphabetically:
-    is_fake = avg_score >= 0.5
-    confidence = avg_score if is_fake else 1 - avg_score
-    if is_fake:
-        st.markdown('<div class="result-fake">⚠️ Likely AI-Generated / Deepfake</div>', unsafe_allow_html=True)
+def analyse_frames(model, frames: list[np.ndarray]) -> list[float]:
+    return [predict_pil(model, Image.fromarray(frame)) for frame in frames]
+
+
+def render_verdict(fake_score: float, fake_ratio: float | None = None) -> None:
+    is_fake = fake_score >= FAKE_THRESHOLD
+    confidence = fake_score if is_fake else 1.0 - fake_score
+
+    if confidence < 0.6:
+        st.markdown(
+            '<div class="result-unknown">Uncertain result</div>',
+            unsafe_allow_html=True,
+        )
+    elif is_fake:
+        st.markdown(
+            '<div class="result-fake">Likely AI-generated or manipulated</div>',
+            unsafe_allow_html=True,
+        )
     else:
-        st.markdown('<div class="result-real">✅ Likely Real</div>', unsafe_allow_html=True)
-    st.write(f"Overall confidence: **{confidence*100:.1f}%** | Fake frames: **{fake_ratio*100:.1f}%**")
+        st.markdown(
+            '<div class="result-real">Likely real image</div>',
+            unsafe_allow_html=True,
+        )
+
+    if fake_ratio is None:
+        st.write(f"Model confidence: **{confidence * 100:.1f}%**")
+    else:
+        st.write(
+            f"Model confidence: **{confidence * 100:.1f}%** | "
+            f"Frames above fake threshold: **{fake_ratio * 100:.1f}%**"
+        )
     st.progress(float(confidence))
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# Main App
-# ══════════════════════════════════════════════════════════════════════════════
-def main():
-    col1, col2, col3 = st.columns([1, 6, 1])
+def render_model_status(model_error: str | None) -> bool:
+    if model_error is None:
+        return True
 
-    with col2:
-        tab_img, tab_vid = st.tabs(["🖼️ Image", "🎬 Video"])
+    st.error("The AI model could not be loaded in this environment.")
+    with st.expander("Model load details"):
+        st.code(model_error)
+    st.info("Check internet access, package installation, and available memory on the deployment host.")
+    return False
 
-        # ── IMAGE TAB ──────────────────────────────────────────────────────────
-        with tab_img:
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-            img_mode = st.radio("Input method", ["📁 Upload File", "🔗 Enter URL"], horizontal=True, key="img_mode")
-            image = None
 
-            if img_mode == "📁 Upload File":
-                uploaded = st.file_uploader("Upload an image to scan…", type=["jpg", "jpeg", "png"], key="img_upload")
-                if uploaded:
-                    image = Image.open(uploaded).convert("RGB")
+def render_header() -> None:
+    st.markdown("<h1>DeepGuard</h1>", unsafe_allow_html=True)
+    st.markdown(
+        '<p class="subtitle">AI media authenticity demo for images and short videos.</p>',
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        '<p class="disclaimer">Research/demo tool only. Results are model probabilities, '
+        'not forensic proof. Always verify important claims with multiple sources.</p>',
+        unsafe_allow_html=True,
+    )
 
-            else:
-                url = st.text_input("Paste a direct image URL", placeholder="https://example.com/photo.jpg", key="img_url")
-                if url:
-                    with st.spinner("Fetching image…"):
-                        try:
-                            image = fetch_image_from_url(url)
-                        except Exception as e:
-                            st.error(f"Could not load image from URL: {e}")
-            st.markdown('</div>', unsafe_allow_html=True)
 
-            if image is not None:
-                st.image(image, caption="Target Image", width="stretch")
+def render_image_tab() -> None:
+    st.markdown('<div class="scan-panel">', unsafe_allow_html=True)
+    input_mode = st.radio(
+        "Input method",
+        ["Upload file", "Enter URL"],
+        horizontal=True,
+        key="image_input_mode",
+    )
+    image = None
 
-                with st.spinner("Analyzing pixels for deepfake artifacts…"):
-                    try:
-                        model, loaded = load_model()
-                        if not loaded:
-                            st.info("💡 Running in demo mode — weights not found in /models.")
+    if input_mode == "Upload file":
+        uploaded = st.file_uploader(
+            "Upload an image to scan",
+            type=["jpg", "jpeg", "png", "webp"],
+            key="image_upload",
+        )
+        if uploaded:
+            image = Image.open(uploaded).convert("RGB")
+    else:
+        url = st.text_input(
+            "Paste a direct image URL",
+            placeholder="https://example.com/photo.jpg",
+            key="image_url",
+        )
+        if url:
+            with st.spinner("Fetching image..."):
+                try:
+                    image = fetch_image_from_url(url)
+                except Exception as exc:
+                    st.error(f"Could not load image: {exc}")
 
-                        score = predict_pil(model, image)
-                        confidence = score if score >= 0.5 else 1 - score
+    st.markdown("</div>", unsafe_allow_html=True)
 
-                        st.markdown("---")
-                        if score >= 0.5:
-                            st.markdown('<div class="result-fake">⚠️ Potential Deepfake Detected</div>', unsafe_allow_html=True)
-                            st.write(f"Confidence score: **{confidence*100:.2f}%** (Likely AI-Generated)")
-                        else:
-                            st.markdown('<div class="result-real">✅ Real Image Verified</div>', unsafe_allow_html=True)
-                            st.write(f"Confidence score: **{confidence*100:.2f}%** (Likely Real)")
-                        st.progress(float(confidence))
+    if image is None:
+        return
 
-                    except Exception as e:
-                        st.error(f"Error during analysis: {e}")
+    st.image(image, caption="Target image", use_container_width=True)
+    model, model_error = load_model()
+    if not render_model_status(model_error):
+        return
 
-        # ── VIDEO TAB ──────────────────────────────────────────────────────────
-        with tab_vid:
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-            n_frames = st.slider("Frames to sample", min_value=10, max_value=60, value=30, step=5,
-                                 help="More frames = more accurate but slower")
-            video_path = None
-            cleanup_video = False
+    with st.spinner("Analyzing image..."):
+        try:
+            score = predict_pil(model, image)
+            render_verdict(score)
+        except Exception as exc:
+            st.error(f"Analysis failed: {exc}")
 
-            uploaded_vid = st.file_uploader("Upload a video to scan (Max 60 seconds)…",
-                                            type=["mp4", "mov", "avi", "mkv", "webm"],
-                                            key="vid_upload")
-            if uploaded_vid:
-                with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as f:
-                    f.write(uploaded_vid.read())
-                    temp_path = f.name
-                
-                # Check video duration using OpenCV
-                cap = cv2.VideoCapture(temp_path)
-                fps = cap.get(cv2.CAP_PROP_FPS)
-                frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT)
-                cap.release()
-                
-                duration = 0
-                if fps > 0:
-                    duration = frame_count / fps
-                
-                if duration > 60:
-                    st.error(f"⚠️ Video is too long ({duration:.1f}s). To ensure the app performs efficiently, please upload a video under 60 seconds.")
-                    try:
-                        os.remove(temp_path)
-                    except:
-                        pass
-                else:
-                    video_path = temp_path
-                    cleanup_video = True
-            st.markdown('</div>', unsafe_allow_html=True)
 
-            if video_path is not None:
-                with st.spinner(f"Extracting & analyzing {n_frames} frames…"):
-                    try:
-                        model, loaded = load_model()
-                        if not loaded:
-                            st.info("💡 Running in demo mode — weights not found in /models.")
+def render_video_tab() -> None:
+    st.markdown('<div class="scan-panel">', unsafe_allow_html=True)
+    n_frames = st.slider(
+        "Frames to sample",
+        min_value=10,
+        max_value=60,
+        value=30,
+        step=5,
+        help="More frames can improve coverage but will run slower.",
+    )
+    uploaded = st.file_uploader(
+        "Upload a short video to scan",
+        type=["mp4", "mov", "avi", "mkv", "webm"],
+        key="video_upload",
+    )
+    st.markdown("</div>", unsafe_allow_html=True)
 
-                        frames = extract_frames(video_path, n_frames=n_frames)
-                        if not frames:
-                            st.error("Could not extract frames. Please check the video file.")
-                        else:
-                            scores = analyse_frames(model, frames)
-                            fake_ratio = sum(1 for s in scores if s >= 0.5) / len(scores)
-                            avg_score  = float(np.mean(scores))
+    if uploaded is None:
+        return
 
-                            render_verdict(avg_score, fake_ratio)
+    temp_path = None
+    try:
+        suffix = os.path.splitext(uploaded.name)[1] or ".mp4"
+        with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as handle:
+            handle.write(uploaded.read())
+            temp_path = handle.name
 
-                            # Per-frame chart
-                            import pandas as pd
-                            chart_data = pd.DataFrame({
-                                "Frame": range(1, len(scores) + 1),
-                                "Fake Probability": [s for s in scores]
-                            }).set_index("Frame")
-                            st.markdown("#### 📊 Per-Frame Fake Probability")
-                            st.line_chart(chart_data)
+        duration = get_video_duration(temp_path)
+        if duration > MAX_VIDEO_SECONDS:
+            st.error(
+                f"Video is {duration:.1f} seconds long. Please upload a video "
+                f"under {MAX_VIDEO_SECONDS} seconds."
+            )
+            return
 
-                            # Frame grid (up to 6 thumbnails)
-                            st.markdown("#### 🎞️ Sampled Frames")
-                            thumb_indices = np.linspace(0, len(frames) - 1, min(6, len(frames)), dtype=int)
-                            cols = st.columns(min(3, len(thumb_indices)))
-                            for i, idx in enumerate(thumb_indices):
-                                s = scores[idx]
-                                conf = (s if s >= 0.5 else 1 - s) * 100
-                                label = f"Frame {idx+1} — {'🔴 Fake' if s >= 0.5 else '🟢 Real'} ({conf:.1f}%)"
-                                cols[i % 3].image(frames[idx], caption=label, width="stretch")
+        model, model_error = load_model()
+        if not render_model_status(model_error):
+            return
 
-                    except Exception as e:
-                        st.error(f"Error during video analysis: {e}")
-                    finally:
-                        if cleanup_video and os.path.exists(video_path):
-                            os.remove(video_path)
+        with st.spinner(f"Extracting and analyzing {n_frames} frames..."):
+            frames = extract_frames(temp_path, n_frames=n_frames)
+            if not frames:
+                st.error("Could not extract frames from this video.")
+                return
 
-    # Footer
+            scores = analyse_frames(model, frames)
+            average_score = float(np.mean(scores))
+            fake_ratio = sum(score >= FAKE_THRESHOLD for score in scores) / len(scores)
+            render_verdict(average_score, fake_ratio)
+
+            chart_data = pd.DataFrame(
+                {
+                    "Frame": range(1, len(scores) + 1),
+                    "Fake probability": scores,
+                }
+            ).set_index("Frame")
+            st.markdown("#### Per-frame fake probability")
+            st.line_chart(chart_data)
+
+            st.markdown("#### Sampled frames")
+            sample_indices = np.linspace(0, len(frames) - 1, min(6, len(frames)), dtype=int)
+            columns = st.columns(min(3, len(sample_indices)))
+            for position, frame_index in enumerate(sample_indices):
+                score = scores[frame_index]
+                verdict = "Fake" if score >= FAKE_THRESHOLD else "Real"
+                confidence = (score if score >= FAKE_THRESHOLD else 1.0 - score) * 100
+                columns[position % len(columns)].image(
+                    frames[frame_index],
+                    caption=f"Frame {frame_index + 1}: {verdict} ({confidence:.1f}%)",
+                    use_container_width=True,
+                )
+    except Exception as exc:
+        st.error(f"Video analysis failed: {exc}")
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            os.remove(temp_path)
+
+
+def main() -> None:
+    render_header()
+    left, center, right = st.columns([1, 6, 1])
+    with center:
+        image_tab, video_tab = st.tabs(["Image", "Video"])
+        with image_tab:
+            render_image_tab()
+        with video_tab:
+            render_video_tab()
+
     st.markdown("---")
-    st.markdown("<p style='font-size: 0.8rem;'>Built for Research and Security Purposes • 2025</p>", unsafe_allow_html=True)
+    st.markdown(
+        '<p class="disclaimer">Built for research, education, and security-awareness demos.</p>',
+        unsafe_allow_html=True,
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+*.log
+*_output*.txt
+predict_*out*.txt
+www.youtube.com_cookies.txt
+models/
