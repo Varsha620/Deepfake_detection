@@ -12,6 +12,8 @@ AI product engineering around media authenticity: input handling, inference,
 video sampling, confidence reporting, deployment readiness, testing, and
 responsible limitation messaging.
 
+<br>The Experimental version is live now.[Click here.](https://deepgaurd-deepfakedetection.streamlit.app/)<br>
+
 ## Screenshots And Visuals
 
 ### System Architecture
